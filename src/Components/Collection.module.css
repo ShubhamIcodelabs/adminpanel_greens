@@ -1,0 +1,148 @@
+.contentBox {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 15px;
+    row-gap: 40px;
+    text-align: left;
+}
+
+.fullWidthBox {
+ 
+}
+
+.mainWrapper {
+    background-color: #F5F5F5;
+    padding: 40px;
+}
+
+@media(min-width: 1300px) {
+    .fullWidthBox {
+        width: 1228px;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 1300px){
+    .contentBox {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width: 1520px) {
+    .noImageCard {
+        height: 270px !important;
+    }
+
+    .collectionImage img {
+        height: 270px !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .contentBox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .contentBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 460px) {
+    .contentBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width: 920px) {
+    .noImageCard {
+        height: 190px !important;
+    }
+
+    .collectionImage img {
+        height: 190px !important;
+    }
+
+    .contentBox {
+        /* padding: 40px 24px; */
+    }
+}
+
+.headingName {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.scrollableContentCard {
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #0000005e;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.closeButton svg path {
+    fill: #fff;
+}
+
+.cardTitle {
+    color: #3bea4c;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    background: #3bea4c21;
+    padding: 0 0 0 10px;
+}
+
+.noImageCard {
+    background-color: #e7e7e7;
+    border: 1px solid #d2d2d2;
+    height: 338px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #747474;
+    transition: all ease 0.5s;
+    border-radius: 3px;
+}
+
+.noImageOuter {
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.noImageCard:hover {
+    transition: all ease 0.5s;
+    transform: scale(1.05);
+}
+
+.collectionImage img {
+    width: 100%;
+    height: 338px;
+    transform: scale(1);
+    cursor: pointer;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.collectionImage {
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+
+.collectionImage:hover img {
+    transition: all ease 0.5s;
+    transform: scale(1.05);
+}

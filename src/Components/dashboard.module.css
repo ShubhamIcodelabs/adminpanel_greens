@@ -1,0 +1,189 @@
+.scrollable-container {
+  max-height: 400px;
+  /* Set the maximum height of the scrollable container */
+  overflow-y: auto;
+  /* Enable vertical scrollbar when content overflows */
+  border: 1px solid #ccc;
+  /* Add borders or styles as needed */
+}
+
+.scrollable-content {
+  padding: 8px;
+  /* Add padding or styles as needed */
+}
+
+.scrollableContent {
+  display: grid;
+}
+
+.mainWrapper {
+  background-color: #F5F5F5;
+  padding: 40px;
+}
+
+.fullWidthBox {}
+
+@media(min-width: 1300px) {
+  .fullWidthBox {
+    width: 1228px;
+    margin: 0 auto;
+  }
+}
+
+.gridBox {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 30px;
+}
+
+.dashboardFromBox {
+  background: linear-gradient(to bottom, #FFFFFF 0%, #F5F5F5 100%);
+  box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 23%);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: inline-block;
+  font-size: 14px;
+  color: #414141;
+  line-height: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.formGroup {
+  margin-top: 24px;
+}
+
+.imageUpload {
+  border: 2px solid #ced4da;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: dashed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.imageUpload input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.imageUpload .imageUploadIcon {}
+
+.inputWrapper {
+  display: flex;
+}
+
+.formGroup .inputBox:focus-visible {
+  outline: 1px solid #9b9d9e;
+}
+
+.formGroup .inputBox {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.rightBox .uploadedImage {
+  background: linear-gradient(to bottom, #FFFFFF 0%, #F5F5F5 100%);
+  box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 23%);
+  padding: 20px;
+}
+
+.productHeading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #414141;
+  font-size: 14px;
+}
+
+.imageUploadBox {
+  height: 200px;
+}
+
+.imageUploadBox img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.collectionButton {
+  margin-top: 20px;
+}
+
+.collectionButton button {
+  background: #01d327;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  padding: 6px 18px;
+  letter-spacing: normal;
+  border: 1px solid #01d327;
+  cursor: pointer;
+}
+
+.listingCardWrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.listingCardWrapper .listinGroup {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px;
+}
+
+.listingCardWrapper .listinGroup:hover {
+  background: #e8e8e8;
+}
+
+.listingCardWrapper .listinGroup .checkButton {
+  margin-right: 10px;
+}
+
+.listingCardWrapper .listinGroup .productTitle {
+  color: #414141;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.listingCardWrapper .listinGroup .checkButton input {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.listingCardWrapper .listinGroup .productImage img {
+  width: 100%;
+  object-fit: contain;
+  border: 1px solid #bababa;
+  border-radius: 3px;
+}
+
+.listingCardWrapper .listinGroup .productImage {
+  width: 70px;
+  height: 70px;
+}

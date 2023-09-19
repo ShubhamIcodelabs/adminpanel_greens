@@ -1,0 +1,23 @@
+.nabBarBox {
+    height: 60px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.navLink {
+    background: #3bea4c;
+    padding: 7px 15px;
+    border-radius: 3px;
+    color: #292525;
+    cursor: pointer;
+}
+
+.leftBar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
